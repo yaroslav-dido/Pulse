@@ -1,0 +1,21 @@
+.feed-form{
+	margin-top: 34px;
+	display: flex;
+	flex-direction: column;
+	input{
+		width: 300px;
+		height: 50px;
+		border-radius: 5px;
+		background-color: #ffffff;
+		margin-top: 14px;
+		padding-left: 21px;
+		padding-right: 21px;
+		font-size: 14px;
+		line-height: 66px;
+		color: #4b4b4b;
+		font-family: "Museo Sans Cyrl";
+		&:nth-child(1){
+			margin: 0;
+		}
+	}
+}

@@ -18,6 +18,26 @@
 	h2.benefits__title{
 		font-size: 27px;
 	}
+	.consultation{
+		h2.title{
+			font-size: 29px;
+		}
+		div.consultation__descr{
+			font-size: 18px;
+		}
+		form.feed-form{
+			input{
+				width: 276px;
+				height: 45px;
+				font-size: 13px;
+			}
+			button.button_submit{
+				width: 276px;
+				height: 45px;
+				font-size: 15px;
+			}
+		}
+	}
 }
 @media (max-width:767px){
 	div.container{
@@ -83,6 +103,26 @@
 		}
 		div.benefits__item{
 			margin: 0 auto;
+		}
+	}
+	.consultation{
+		h2.title{
+			font-size: 22px;
+		}
+		div.consultation__descr{
+			font-size: 16px;
+		}
+		form.feed-form{
+			input{
+				width: 252px;
+				height: 40px;
+				font-size: 11px;
+			}
+			button.button_submit{
+				width: 252px;
+				height: 40px;
+				font-size: 14px;
+			}
 		}
 	}
 }
@@ -169,6 +209,26 @@
 		font-size: 12px;
 		margin-top: 18px;
 	}
+	.consultation{
+		h2.title{
+			font-size: 17px;
+		}
+		div.consultation__descr{
+			font-size: 13px;
+		}
+		form.feed-form{
+			input{
+				width: 209px;
+				height: 35px;
+				font-size: 10px;
+			}
+			button.button_submit{
+				width: 209px;
+				height: 35px;
+				font-size: 12px;
+			}
+		}
+	}
 }
 @media (max-width:380px){
 	header.header{
@@ -237,6 +297,37 @@
 	div.benefits__subtitle{
 		font-size: 13px;
 		margin-top: 19px;
+	}
+	div.consultation{
+		padding: 150px 0 92px 0;
+		h2.title{
+			font-size: 11px;
+			width: 250px;
+			margin: 0 auto; 
+
+		}
+		div.consultation__descr{
+			font-size: 12px;
+			width: 250px;
+			margin: 0 auto;
+			margin-top: 80px; 
+		}
+		form.feed-form{
+			width: 250px;
+			margin: 0 auto;
+			margin-top: 28px;
+			input{
+				width: 204px;
+				height: 36px;
+				font-size: 10px;
+
+			}
+			button.button_submit{
+				width: 204px;
+				height: 36px;
+				font-size: 11px;
+			}
+		}
 	}
 }
 	
