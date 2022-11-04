@@ -30,6 +30,9 @@ const slider = tns({
         nav: true,
 
       },
+      1366: {
+        nav: false,
+      },
     }
 });
 
