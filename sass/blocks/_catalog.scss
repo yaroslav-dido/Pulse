@@ -27,8 +27,9 @@
 		cursor: pointer;
 		transition: 0.5s all;
 		&:hover{
-			box-shadow: 3px 3px 20px red;
+			box-shadow: 3px 3px 20px black;
 			border: none;
+			width: 230px;
 
 		}
 		div{
@@ -44,7 +45,7 @@
 		}
 
 	}
-	&_active{
+	&__tab_active{
 		width: 220px;
 		height: 50px;
 		background-color: #c70101;
@@ -55,14 +56,24 @@
 	}
 	&__content{
 		margin-top: 60px;
+		display: none;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		&_active{
+			display: flex;
+		}
 	}
-	.catalog-item{
+	&-item{
 		width: 300px;
 		min-height: 440px;
 		background-color: #ffffff;
 		border: 2px solid #e8e8e8;
 		padding: 20px 20px 27px 20px;
-		position: relative;
+		margin-top: 20px;
+		overflow: hidden;
+		&:nth-child(-n+3){
+			margin: 0;
+		}
 		hr{
 			background-color: #e8e8e8;
 			margin-bottom: 20px;
@@ -97,6 +108,9 @@
 			text-align: center;
 			margin: 0 auto;
 			margin-top: 14px;
+			&:hover{
+				color: #c70101;
+			}
 
 		}
 		&__prices{
@@ -117,9 +131,77 @@
 			justify-content: center;
 			align-items: center;
 		}	
-		&_wrapper{
-			width: 200%;
+		&__wrapper{
 			display: flex;
+			width: calc(200% + 40px);
+		}
+		&__content{
+			width: 50%;
+			margin-right: 0px;
+			transform: translateX(100%);
+			transition: 0.5s all;
+			&_active{
+				transform: translateX(0%);
+				margin-right: 20px;
+			}
+		}
+		&__list{
+			width: 50%;
+			margin-left: 20px;
+			transform: translateX(0%);
+			transition: 0.5s all;
+			margin-left: 0;
+			margin-bottom: 0;
+			list-style-type: none;
+			position: relative;
+			&_active{
+				transform: translateX(-100%);
+				margin-right: 0px;
+				
+			}
+			li{
+				margin-top: 25px;
+				font-size: 14px;
+				color: #555555;
+				font-family: "Museo Sans Cyrl";
+				position: relative;
+				&:first-child{
+					margin: 0;
+				}
+				&:before{
+					content: '';
+					position: absolute;
+					width: 5px;
+					height: 5px;
+					background-color: #c70101;
+					left: -14px;
+					top: 8px;
+				}
+			}
+		}
+		&__back{
+			position: absolute;
+			bottom: 0;
+			left: 107px;
+			font-size: 14px;
+			text-decoration: underline;
+			color: #c70101;
+			font-family: "Museo Sans Cyrl";
+			text-transform: uppercase;
+			text-align: center;
+			&:hover{
+				color: #c70101;
+			}
+		}
+	}
+	&__content_second{
+		justify-content: center;
+
+	}
+	&__content_third{
+		justify-content: center;
+		.catalog-item_third{
+			margin-right: 40px;
 		}
 	}
 }

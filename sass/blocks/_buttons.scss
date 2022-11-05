@@ -48,6 +48,13 @@
 			font-family: "Museo Sans Cyrl";
 			text-align: center;
 			border: none;
+			transition: 0.5s all;
+			&:hover{
+				box-shadow: 3px 3px 20px black;
+				width: 133px;
+				height: 42px;
+
+			}
 		}
 			
 }
