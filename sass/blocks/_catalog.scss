@@ -26,8 +26,10 @@
 		margin-right: 10px;
 		cursor: pointer;
 		transition: 0.5s all;
-		box-shadow: 3px 3px 20px black;
+		
+
 		&:hover{
+			box-shadow: 3px 3px 20px black;
 			border: none;
 			width: 230px;
 

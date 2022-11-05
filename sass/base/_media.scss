@@ -311,7 +311,7 @@
 					margin-top: 0;
 				}
 				img.catalog-item__img{
-					height: 177px;
+					height: 180px;
 				}
 				div.catalog-item__subtitle{
 					font-size: 15px;
@@ -535,12 +535,14 @@
 		li.catalog__tab{
 			width: 210px;
 			height: 40px;
+			
 			div{
+
 				font-size: 11px;
 				line-height: 37px;
 				
 			}
-			&:hover{
+			&:hover{	
 				box-shadow: 3px 3px 20px black;
 				border: none;
 				width: 220px;
@@ -558,7 +560,7 @@
 					margin-top: 20px;
 				}
 				img.catalog-item__img{
-					height: 158px;
+					height: 180px;
 				}
 				div.catalog-item__subtitle{
 					font-size: 14px;
@@ -718,7 +720,7 @@
 					margin-top: 20px;
 				}
 				img.catalog-item__img{
-					height: 148px;
+					height: 180px;
 				}
 				div.catalog-item__subtitle{
 					font-size: 13px;
