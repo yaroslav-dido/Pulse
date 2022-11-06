@@ -213,6 +213,17 @@
 		}
 		div.benefits__item{
 			margin: 0 auto;
+			img.benefits_icon{
+				margin-top: 20px;
+			}
+			div.benefits__subtitle{
+				margin-top: 10px;
+			}
+			&:first-child{
+				img.benefits_icon{
+					margin-top: 0;
+				}
+			}
 		}
 	}
 	.consultation{
@@ -341,6 +352,11 @@
 				}
 				div.catalog-item__footer{
 					transition: 0.5s all;
+					button.button_mini{
+						&:hover{
+							width: 120px;
+						}
+					}
 					div.catalog-item__old-price{
 						font-size: 12px;
 					}
@@ -618,6 +634,11 @@
 					margin-top: 25px;
 				}
 				div.catalog-item__footer{
+					button.button_mini{
+						&:hover{
+							width: 120px;
+						}
+					}
 					div.catalog-item__old-price{
 						font-size: 11px;
 					}
