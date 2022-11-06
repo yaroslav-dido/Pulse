@@ -1,0 +1,41 @@
+.reviews{
+	padding-bottom: 70px;
+	.title{
+		font-size: 30px;
+		text-transform: uppercase;
+		color: #0d0d0d;
+		font-family: "Museo Sans Cyrl";
+		text-align: center;
+	}
+	&__client{
+		display: flex;
+		margin-top: 70px;
+		&__img{
+			width: 170px;
+			height: 170px;
+		}
+		&_descr{
+			margin-left: 60px;
+
+		}
+		&__subtitle{
+			font-size: 18px;
+			color: #0d0d0d;
+			font-family: "Museo Sans Cyrl";
+			line-height: 15px;
+		}
+		&__marathons{
+			font-size: 14px;
+			color: #646464;
+			font-family: "Museo Sans Cyrl";
+		}
+		&__more{
+			font-size: 16px;
+			color: #0d0d0d;
+			font-family: "Museo Sans Cyrl";
+			margin-top: 7px;
+		}
+
+	}
+
+}

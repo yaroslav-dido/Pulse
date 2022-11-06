@@ -132,7 +132,21 @@
 		
 
 
-	}		
+	}	
+	.reviews{
+		h2.title{
+			font-size: 28px;
+		}
+		div.reviews__client{
+			img.reviews__clinet__img{
+				height: 162px;
+				width: 162px;
+			}
+			div.reviews__client__more{
+				font-size: 15px;
+			}
+		}
+	}	
 }
 	
 @media (max-width:767px){
@@ -280,6 +294,9 @@
 		}
 	}
 	.catalog{
+		div.catalog-item__content{
+			margin-right: 0;
+		}
 		h2.title{
 			font-size: 24px;
 		}
@@ -340,6 +357,7 @@
 					width: 51%;
 					
 				}
+
 				ul.catalog-item__list_active{
 					li{
 						font-size: 12px;
@@ -360,6 +378,31 @@
 						font-size: 12px;
 					}
 			}
+		}
+	}
+	.reviews{
+		h2.title{
+			font-size: 26px;
+		}
+		div.reviews__client{
+			flex-direction: column;
+			margin-top: 50px;
+			img.reviews__client__img{
+				display: block;
+				height: 162px;
+				width: 162px;
+				margin: 0 auto;
+			}
+			div.reviews__client__more{
+				font-size: 14px;
+			}
+			div.reviews__client__subtitle{
+				font-size: 16px;
+			}
+			div.reviews__client__marathons{
+				font-size: 13px;
+			}
+		
 		}
 	}
 }
@@ -581,10 +624,38 @@
 					div.catalog-item__price{
 						font-size: 15px;
 					}
+				}
 			}
 		}
 	}
-}
+	.reviews{
+		h2.title{
+			font-size: 24px;
+		}
+		div.reviews__client{
+			flex-direction: column;
+			margin-top: 50px;
+			img.reviews__client__img{
+				display: block;
+				height: 150px;
+				width: 150px;
+				margin: 0 auto;
+			}
+			div.reviews__client__more{
+				font-size: 13px;
+			}
+			div.reviews__client__subtitle{
+				font-size: 15px;
+				margin-top: 20px;
+			}
+			div.reviews__client__marathons{
+				font-size: 12px;
+			}
+		
+		}
+	}
+
+
 @media (max-width:380px){
 	header.header{
 		justify-content: space-around;
@@ -753,6 +824,32 @@
 					}
 				}
 			}	
+		}
+	}
+	.reviews{
+		h2.title{
+			font-size: 22px;
+		}
+		div.reviews__client{
+			
+			img.reviews__client__img{
+				
+				height: 130px;
+				width: 130px;
+				
+			}
+			div.reviews__client__more{
+				font-size: 12px;
+				
+			}
+			div.reviews__client__subtitle{
+				font-size: 13px;
+				
+			}
+			div.reviews__client__marathons{
+				font-size: 11px;
+			}
+		
 		}
 	}
 }
