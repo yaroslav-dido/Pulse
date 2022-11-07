@@ -1,0 +1,58 @@
+.footer{
+	position: relative;
+	height: 630px;
+	&__info{
+		width: 462px;
+		height: 271px;
+		background-color: $main_color;
+		position: absolute;
+		top: 0;
+		left: 33%;
+		padding-top: 50px;
+		&-adr{
+			font-size: 20px;
+			color: #ffffff;
+			font-family: "Museo Sans Cyrl";
+			text-align: center;
+		}
+		&__number{
+			display: block;
+			font-size: 20px;
+			color: #ffffff;
+			font-family: "Museo Sans Cyrl";
+			text-align: center;
+			margin: 0 auto;
+			text-decoration: none;
+			&:hover{
+				color: #ffffff;
+				text-decoration: underline;
+			}
+		}
+		&__icons{
+			display: flex;
+			justify-content: center;
+			margin-top: 36px;
+			cursor: pointer;
+			&__icon{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 52px;
+				height: 52px;
+				border: 1px solid #ffffff;
+				border-radius: 100%;
+				margin-right: 30px;
+				transition: 0.5s all;
+				img{
+					width: 100%;
+				}
+				&:last-child{
+					margin: 0; 
+				}
+				&:hover{
+					box-shadow: 3px 3px 20px black;
+				}
+			}
+		}
+	}
+}
