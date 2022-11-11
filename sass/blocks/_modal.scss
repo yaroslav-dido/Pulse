@@ -41,6 +41,11 @@
 	&_mini{
 	min-height: 141px;
 	}
+	label{
+		font-size: 13px;
+		margin-top: 10px;
+		padding-left: 10px;
+	}
 }
 #consultation,	#order, #thanks{
 	display: none;

@@ -79,4 +79,16 @@ $(document).ready(function(){
          $('.overlay, #order').fadeIn('slow');
       });
     });
+    $('input[name=phone]').mask("+38 (999) 999 99 99");
+    $('#consultation form').validate({
+      rules: {
+        name: "required",
+        phone: "required",
+
+      }
+    });
+    $('#order form').validate();
+    $('#consultation-form').validate();
+
+
 });
