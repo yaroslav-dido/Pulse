@@ -79,7 +79,7 @@ $(document).ready(function(){
          $('.overlay, #order').fadeIn('slow');
       });
     });
-    $('input[name=phone]').mask("+38 (999) 999 99 99");
+    $('input[name=phone]').mask("+380 (99) 999-99-99");
     $('#consultation form').validate({
       rules: {
         name: "required",
@@ -89,6 +89,22 @@ $(document).ready(function(){
     });
     $('#order form').validate();
     $('#consultation-form').validate();
+    
+    $('form').submit(function(e){
+     e.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
 
+      }).done(function() {
+          $(this).find("input").val(""); 
+          $('#consultation, #order').fadeOut();
+          $('.overlay, #thanks').fadeIn('slow');
 
+          $('form').trigger('reset');
+      });
+        return  false;
+    });
+    
 });
