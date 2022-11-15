@@ -18,6 +18,9 @@
 		flex-direction: column;
 		align-items: center;
 		max-width: 238px;
+		.benefits_icon_animated {
+			animation: heartbeat 3s ease-in infinite;
+		}
 	}
 	&__subtitle{
 		font-size: 18px;
@@ -38,5 +41,4 @@
 			color: #ff0000;
 			text-decoration: underline;
 	}
-	
 }
