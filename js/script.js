@@ -84,8 +84,9 @@ $(document).ready(function(){
       rules: {
         name: "required",
         phone: "required",
+        email: "required"
 
-      }
+      },
     });
     $('#order form').validate();
     $('#consultation-form').validate();
