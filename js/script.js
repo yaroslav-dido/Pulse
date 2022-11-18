@@ -115,10 +115,5 @@ $(document).ready(function(){
         $('.arrow-up').fadeOut();
       }
   });
-
-  $page.animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-  }, 400);
-  return false;
-    
+  new Wow().init();
 });
